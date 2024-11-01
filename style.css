@@ -38,7 +38,7 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     width: 400px;
-    height: 120vw;
+    height: 750px;
     background-color: var(--preto);
     border-radius: 20px;
     
