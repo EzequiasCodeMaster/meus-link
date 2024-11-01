@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+:root {
+    --preto:#000000;
+    --azulescuro:#0000ee;
+    --azulclaro:#016cfe;
+    --pretomedio:#101010;
+    --pretofraco:#101010;
+    --branco:#fafafa;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+}
+
+/* Para navegadores Webkit */
+::-webkit-scrollbar {
+    width: 0px; /* Esconde a barra de rolagem */
+    background: transparent; /* Torna a área invisível */
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var(--pretofraco);
+    overflow-x: hidden;
+   
+}
+
+.paizona {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 400px;
+    height: 120vw;
+    background-color: var(--preto);
+    border-radius: 20px;
+    
+}
+
+.minhacara {
+    display: flex;
+    flex-flow: row;
+    width: 374px;
+    height: 70px;
+    background-color: var(--pretofraco);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.foto {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    border: 2px solid var(--azulescuro);
+    border-radius: 10px;
+}
+
+.minhacara h1 {
+    color: #fafafa;
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.minhacara p {
+    color: aliceblue;
+}
+
+.sorridente {
+    width: 40px;
+    height: auto;
+    margin: 15px 19px;
+    animation: girar 5s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+/* -------------- HARD SKILLS-------------*/
+
+.hard {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 374px;
+    height: 80px;
+    background-color: var(--pretofraco);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.hard h3 {
+    color: #0000ee;
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+
+.linguas img {
+    width: 30px;
+    margin: 5px 8px;
+    border-radius: 5px;
+}
+
+
+/*------------- MINHA MARCA ----------*/
+
+.minhamarca {
+    width: 374px;
+    height: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 12px;
+}
+
+.marca {
+    background-color: var(--pretofraco);
+    padding: 15px;
+    border-radius: 12px;
+}
+.marca h2 {
+    font-size: 1.1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.marca p {
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.671);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.marca img {
+    width: 150px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 5px;
+}
+
+/*--------------- redes sociais ---------*/  
+
+.redepai {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--pretofraco);
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.redepai img {
+    width: 65px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 120px;
+    animation: girar 10s linear infinite;
+   transition: width 0.5s ease;
+}
+
+.redepai img:hover {
+    width: 70px;
+    border: 1px solid var(--azulescuro);
+}
+
+/*--------------sites----------------*/
+
+.sites {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 374px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.site1 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000ee;
+    border-radius: 12px;
+    
+}
+
+.pulsante {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    animation: pulsar 1.5s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1); /* aumenta o tamanho em 10% */
+        opacity: 0.7;
+    }
+}
+
+.site2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: var(--pretofraco);
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+footer h4 {
+    margin: 15px;
+    animation: pulsar 3s ease-in-out infinite;
+}
+
+.spoty {
+    width: 100%; /* Ajuste para que o iframe use todo o espaço disponível */
+    max-width: 374px; /* Limita a largura máxima */
+    height: 160px; /* Altura para permitir que o iframe se encaixe bem */
+}
