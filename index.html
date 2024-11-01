@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div id="precarregamento">
+        <div class="load"></div>
+    </div>
+    <!-- Restante do conteúdo da sua página -->
+
     <div class="paizona">
         <div class="minhacara">
             <div class="fotos"><img class="foto" src="img/eu.jpg" alt="minha cara"></div>
@@ -64,6 +70,14 @@
                 <div class="spoty"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2BJVqXccnoSJLt7NruuhMl?utm_source=generator&theme=0" width="90%" height="152" ></iframe></div>
             </footer>
     </div>
+
+
+    <script>
+        window.addEventListener('load', function(){
+            const precarregamento = document.getElementById('precarregamento');
+            precarregamento.style.display = 'none';
+        });
+    </script>
 
 </body>
 </html>
