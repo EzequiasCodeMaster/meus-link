@@ -188,7 +188,11 @@ body {
     align-items: center;
     background-color: #0000ee;
     border-radius: 12px;
-    
+    transition: transform 1s ease;
+}
+
+.site1:hover {
+    transform: translateY(-5px);
 }
 
 .pulsante {
@@ -217,6 +221,11 @@ body {
     background-color: var(--pretofraco);
     margin-top: 15px;
     border-radius: 12px;
+    transition: transform 1s ease;
+}
+
+.site2:hover {
+    transform: translateY(-5px);
 }
 
 footer {
@@ -239,6 +248,11 @@ footer h4 {
 }
 
 
+/*------------LINKS--------*/
+
+ .sites a {
+    text-decoration: none;
+ }
 
 /*--------------PRE CARREGAMENTO--------------*/
 #precarregamento {
