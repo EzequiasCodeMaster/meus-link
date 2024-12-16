@@ -20,6 +20,7 @@
 ::-webkit-scrollbar {
     width: 0px; /* Esconde a barra de rolagem */
     background: transparent; /* Torna a área invisível */
+    overflow: hidden;
 }
 
 
